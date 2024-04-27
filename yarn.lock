@@ -272,6 +272,11 @@
   dependencies:
     undici-types "~5.26.4"
 
+"@types/sqlstring@^2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@types/sqlstring/-/sqlstring-2.3.2.tgz#afb90f9be1aa8f7fce982f743bcad607ee25c0f4"
+  integrity sha512-lVRe4Iz9UNgiHelKVo8QlC8fb5nfY8+p+jNQNE+UVsuuVlQnWhyWmQ/wF5pE8Ys6TdjfVpqTG9O9i2vi6E0+Sg==
+
 acorn-walk@^8.2.0:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.3.2.tgz#7703af9415f1b6db9315d6895503862e231d34aa"
@@ -321,6 +326,11 @@ capnp-ts@^0.7.0:
   dependencies:
     debug "^4.3.1"
     tslib "^2.2.0"
+
+cfw-bq@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/cfw-bq/-/cfw-bq-0.0.3.tgz#5ed3a933794e4f72e91398d0321d85a557bd8267"
+  integrity sha512-oV8Jxn0DP2zEqEMGj8wTwcp+nk8mLaEmMJ71T1T4kvWSPcBZQ3Qibxcq2y2rfrkNYcfd65PKd2Nj5gsgAk6zTA==
 
 chokidar@^3.5.3:
   version "3.6.0"
@@ -477,10 +487,10 @@ is-number@^7.0.0:
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
 
-kiribi@^0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/kiribi/-/kiribi-0.0.10.tgz#fd464b69938b9d95fa27b7189cccdb2732ff5d5f"
-  integrity sha512-RsEo+xHOYxrEVjsiOTeLJZvfD+QjDqE+9QE/hhjfj8jOh0yCW4R7ANDkfYmY8iW8bXyXlJ47yiGpGxrJaTI/ag==
+kiribi@^0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/kiribi/-/kiribi-0.0.12.tgz#8a8eb88b9aa632590a403124e2495b497b0aad06"
+  integrity sha512-sdTsonCKYyBwwwcm2OItYYRvhT3o6TgvUz/hu519PbNSeAogMNP1W6bM18pmdrCGkcefytu/YuSxg8XHbiVqUQ==
   dependencies:
     "@hono/zod-validator" "^0.2.1"
     "@prisma/adapter-d1" "^5.12.1"
@@ -636,6 +646,11 @@ sourcemap-codec@^1.4.8:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
+
+sqlstring@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/sqlstring/-/sqlstring-2.3.3.tgz#2ddc21f03bce2c387ed60680e739922c65751d0c"
+  integrity sha512-qC9iz2FlN7DQl3+wjwn3802RTyjCx7sDvfQEXchwa6CWOx07/WVfh91gBmQ9fahw8snwGEWU3xGzOt4tFyHLxg==
 
 stacktracey@^2.1.8:
   version "2.1.8"

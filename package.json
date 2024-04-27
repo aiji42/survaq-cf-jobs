@@ -4,18 +4,21 @@
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "wrangler dev",
+    "dev": "wrangler dev --port 8000",
     "start": "wrangler dev",
     "cf-typegen": "wrangler types"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240423.0",
+    "@types/sqlstring": "^2.3.2",
     "prettier": "^3.2.5",
     "prisma": "^5.13.0",
     "typescript": "^5.4.5",
     "wrangler": "^3.52.0"
   },
   "dependencies": {
-    "kiribi": "^0.0.10"
+    "cfw-bq": "^0.0.3",
+    "kiribi": "^0.0.12",
+    "sqlstring": "^2.3.3"
   }
 }
