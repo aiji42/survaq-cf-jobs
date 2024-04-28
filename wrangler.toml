@@ -3,3 +3,26 @@ name = "survaq-cf-jobs"
 main = "src/index.ts"
 compatibility_date = "2024-04-23"
 
+[[d1_databases]]
+binding = "DB"
+database_name = "kiribi-db"
+database_id = "9922f570-6c8a-4971-a5df-46a660fc4b41"
+migrations_dir = './node_modules/kiribi/migrations'
+
+[[queues.producers]]
+binding = "KIRIBI_QUEUE"
+queue = "kiribi-queue"
+
+[[queues.consumers]]
+queue = "kiribi-queue"
+max_retries = 5
+
+[[services]]
+binding = "KIRIBI"
+service = "survaq-cf-jobs"
+
+[site]
+bucket = "./node_modules/kiribi/client"
+
+[triggers]
+crons = [ "0 0 * * *", "*/5 * * * *" ]
