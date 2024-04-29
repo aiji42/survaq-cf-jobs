@@ -26,7 +26,7 @@ service = "survaq-cf-jobs"
 bucket = "./node_modules/kiribi/client"
 
 [triggers]
-crons = [ "0 0 * * *", "*/5 * * * *" ]
+crons = [ "0 0 * * *", "*/5 * * * *", "*/10 * * * *" ]
 
 [[services]]
 binding = "LOGILESS"

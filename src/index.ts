@@ -12,10 +12,9 @@ export default class extends Kiribi<any, Env> {
   async scheduled({ cron }: ScheduledController) {
     if (cron === '0 0 * * *') await this.sweep();
 
-    if (cron === '*/5 * * * *') {
-      await this.recover();
-      await this.env.KIRIBI.enqueue('LOGILESS', {});
-    }
+    if (cron === '*/5 * * * *') await this.recover();
+
+    if (cron === '*/10 * * * *') await this.env.KIRIBI.enqueue('LOGILESS', {});
   }
 
   async fetch(req: Request): Promise<Response> {
