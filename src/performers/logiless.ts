@@ -10,7 +10,7 @@ export class Logiless extends BasePerformer {
   }
 
   async perform(params: { sinceDate?: string }) {
-    let lastUpdated = params.sinceDate ? new Date(`${params.sinceDate}TOO:OO:OO+09:00`) : null;
+    let lastUpdated = params.sinceDate ? new Date(`${params.sinceDate}T00:00:00+09:00`) : null;
     if (!lastUpdated) {
       const [latest] = await this.bq.query<{ updated_at: Date }>(
         'SELECT updated_at FROM `logiless.sales_orders` ORDER BY updated_at DESC LIMIT 1',
@@ -19,7 +19,7 @@ export class Logiless extends BasePerformer {
     }
     if (!lastUpdated) throw new Error('No last updated date');
 
-    let hasNext = false;
+    let hasNext = true;
     let page = 1;
     while (hasNext) {
       const res = await this.logiless.getSalesOrders(lastUpdated, page);
